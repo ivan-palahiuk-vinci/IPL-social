@@ -8,6 +8,8 @@ function isValidEmail(email: string): boolean {
     if (local.length === 0 || domain.length === 0) return false;
 
     if (domain.endsWith('.')) return false;
+
+    if (email.includes(' ')) return false;
     
     return false;
 }
