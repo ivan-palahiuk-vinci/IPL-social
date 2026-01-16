@@ -12,8 +12,8 @@ function isValidEmail(email: string): boolean {
     if (email.includes(' ')) return false;
 
     if (!domain.includes('.')) return false;
-    
-    return false;
+
+    return true;
 }
 
 export { isValidEmail };
