@@ -7,6 +7,7 @@ function isValidEmail(email: string): boolean {
     const [local, domain] = parts;
     if (local.length === 0 || domain.length === 0) return false;
 
+    if (domain.endsWith('.')) return false;
     
     return false;
 }
